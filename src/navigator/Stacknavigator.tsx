@@ -10,7 +10,7 @@ export type RootStackParams = {
 const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => (
-  <Stack.Navigator initialRouteName="Home">
+  <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
     <Stack.Screen name="Home" component={Home} />
     <Stack.Screen name="Pokemon" component={Pokemon} />
     <Stack.Screen name="Search" component={Search} />
